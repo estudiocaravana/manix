@@ -1,0 +1,11 @@
+---
+export interface Props {
+  es: string;
+  en: string;
+  gl: string;
+}
+
+const { es, en, gl } = Astro.props;
+---
+
+<small class="block -mt-1 mb-1 text-indigo-700 max-w-[280px]">{es}</small>

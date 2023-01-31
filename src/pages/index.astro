@@ -1,0 +1,116 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Tipo from "../components/Tipo.astro";
+import Item from "../components/Item.astro";
+import Extra from "../components/Extra.astro";
+import Comentario from "../components/Comentario.astro";
+import Ingredientes from "../components/Ingredientes.astro";
+---
+
+<Layout title="Carta">
+  <div class="text-center my-12">
+    <div class="w-1 h-12 rounded bg-indigo-900 mx-auto mb-3"></div>
+    Café<h1 class="text-5xl font-bold">MANIX</h1>1970
+    <div class="w-1 h-12 rounded bg-indigo-900 mx-auto mt-3"></div>
+  </div>
+  <div class="seccion">
+    <Tipo title="Tapas" />
+    <Item es="Tortilla" en="" gl="" prezo="0.80" />
+    <Item es="Calamares fritos" en="" gl="" prezo="''" />
+    <Item es="Calamares en tinta" en="" gl="" prezo="''" />
+    <Item es="Albóndigas" en="" gl="" prezo="''" />
+    <Item es="Costilla guisada" en="" gl="" prezo="''" />
+    <Item es="Callos" en="" gl="" prezo="''" />
+    <Item es="Riñones" en="" gl="" prezo="''" />
+    <Item es="Aceitunas" en="" gl="" prezo="''" />
+  </div>
+  <div class="seccion">
+    <Tipo title="Desayunos" />
+    <b class="block mb-1">Bollería</b>
+    <Item es="Churros" en="" gl="" prezo="0.20" />
+    <Item es="Galletas" en="" gl="" prezo="0.50" />
+    <Item es="Galletas sin azúcar" en="" gl="" prezo="0.70" />
+    <Item es="Magdalenas tradicionales" en="" gl="" prezo="''" />
+    <Item es="Magdalenas valencianas" en="" gl="" prezo="''" />
+    <Item es="Donuts" en="" gl="" prezo="1.00" />
+    <Item es="Croissants" en="" gl="" prezo="''" />
+    <b class="block mt-6">Tostadas</b>
+    <small class="block mb-1">Pan artesano o pan de molde</small>
+    <Item es="Mantequilla y/o mermelada" en="" gl="" prezo="0.20" />
+    <Item es="Aceite y tomate" en="" gl="" prezo="0.50" />
+    <Item es="Jamón serrano" en="" gl="" prezo="0.50" />
+    <Item es="Aguacate" en="" gl="" prezo="0.50" />
+    <Item es="Miel" en="" gl="" prezo="0.50" />
+    <Extra es="Extra" en="" gl="" prezo="0.20" />
+  </div>
+  <div class="seccion">
+    <Tipo title="Empanadillas" />
+    <Comentario es="De la abuela Concha. 50 años cocinando con ingredientes caseros" en="" gl="" />
+    <Item es=" Carne" en="" gl="" prezo="1.00" />
+    <Item es="Pollo" en="" gl="" prezo="''" />
+    <Item es="Trifásica" en="" gl="" prezo="''" />
+    <Item es="Queso" en="" gl="" prezo="''" />
+    <Item es="Grelos con gambas" en="" gl="" prezo="''" />
+    <Item es="Atún" en="" gl="" prezo="''" />
+    <Item es="Setas" en="" gl="" prezo="''" />
+    <Item es="Pulpo" en="" gl="" prezo="''" />
+    <Item es="Zamburiñas" en="" gl="" prezo="''" />
+  </div>
+  <div class="seccion">
+    <Tipo title="Hamburguesas" />
+    <Comentario es="Mezcla casera de calidad 75% ternera, 25% cerdo" en="" gl="" />
+    <Item es="Simple" en="" gl="" prezo="3.20" />
+    <Item es="Completa" en="" gl="" prezo="4.30" />
+    <Ingredientes es="Con lechuga, tomate, cebolla y queso" en="" gl="" />
+    <Item es="Vegetariana" en="" gl="" prezo="5.10" />
+    <Ingredientes es="Con lechuga, tomate, cebolla y queso. 100% proteína vegetal (Beyond Meat)" en="" gl="" />
+    <Item es="Vegana" en="" gl="" prezo="4.60" />
+    <Ingredientes es="Con lechuga, tomate y cebolla. 100% proteína vegetal (Beyond Meat)" en="" gl="" />
+    <Item es="Milhomes" en="" gl="" prezo="5.30" />
+    <Ingredientes es="Con bacon, lomo, tomate, lechuga, queso y cebolla" en="" gl="" />
+  </div>
+  <div class="seccion">
+    <Tipo title="Bocadillos" />
+    <Item es="Lomo" en="" gl="" prezo="2.70" />
+    <Item es="Bacon" en="" gl="" prezo="''" />
+    <Item es="Chorizo" en="" gl="" prezo="2.80" />
+    <Item es="Queso" en="" gl="" prezo="''" />
+    <Item es="Tortilla" en="" gl="" prezo="3.10" />
+    <Item es="Jamón serrano" en="" gl="" prezo="''" />
+    <Item es="Calamares" en="" gl="" prezo="3.60" />
+    <Item es="Trifásico" en="" gl="" prezo="3.70" />
+    <Ingredientes es="Bacon, lomo y queso" en="" gl="" />
+    <Item es="Pollo" en="" gl="" prezo="3.60" />
+    <Item es="Especial de pollo" en="" gl="" prezo="4.70" />
+    <Ingredientes es="Pollo, lechuga, tomate, cebolla y queso" en="" gl="" />
+    <Item es="Milmulleres" en="" gl="" prezo="4.70" />
+    <Ingredientes es="Pollo, bacon, lomo, lechuga, tomate, cebolla y queso" en="" gl="" />
+  </div>
+  <div class="seccion">
+    <Extra es="Patatas fritas" en="" gl="" prezo="3.00" />
+    <Extra es="Ensalada" en="" gl="" prezo="4.00" />
+    <Extra es="Extra de tomate, cebolla o lechuga" en="" gl="" prezo="0.20" />
+    <Extra es="Extra de lomo, bacon, queso o york" en="" gl="" prezo="0.50" />
+    <Extra es="Extra de huevo" en="" gl="" prezo="0.60" />
+  </div>
+  <div class="seccion">
+    <Tipo title="Perritos" />
+    <Item es="Solo" en="" gl="" prezo="2.80" />
+    <Extra es="Extra" en="" gl="" prezo="0.50" />
+  </div>
+  <div class="seccion">
+    <Tipo title="Sandwich" />
+    <Item es="Mixto" en="" gl="" prezo="2.50" />
+    <Item es="Vegetal" en="" gl="" prezo="3.50" />
+  </div>
+  <div class="seccion">
+    <Tipo title="Postres" />
+    <Item es="Helado" en="" gl="" prezo="3.00" />
+    <Ingredientes es="Yogurt, vainilla, Avellana o chocolate" en="" gl="" />
+    <Item es="Coulant de chocolate" en="" gl="" prezo="3.00" />
+  </div>
+  <div class="seccion">
+    <small class="inline-block leading-tight">Alérgenos: Gluten / Crustáceos / Pescado / Huevo / Cacahuete / Soja / Apio / Leche / Mostaza / Sésamo / Sulfitos / Altramuz / Moluscos</small>
+    <small class="inline-block leading-tight">Establecimiento adaptado en materia de alérgenos según el reglamento (EU) Nº 1169/2011 y Real Decreto 126/2015. Soliciten información al personal.</small>
+  </div>
+</Layout>
