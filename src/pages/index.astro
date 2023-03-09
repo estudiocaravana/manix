@@ -21,7 +21,7 @@ import padres from "../assets/img/padres.png";
       <br /><a class="anclas" href="#sandwich">Sandwich</a> · <a class="anclas" href="#postres">Postres</a>
     </div>
   </div>
-  <img src={abuela} alt="abuela" class="block px-9 mx-auto max-w-sm" />
+  <img src={abuela} alt="abuela" class="block px-9 mx-auto max-w-sm mt-auto" />
   <div id="tapas" class="seccion">
     <Tipo title="Tapas" />
     <Item es="Tortilla" en="" gl="" prezo="0.80 €" />
@@ -128,5 +128,7 @@ import padres from "../assets/img/padres.png";
   <div class="text-center pt-12 pb-24 lg:hidden">
     <a href="#inicio" class="underline">Volver arriba</a>
   </div>
-  <img src={padres} alt="abuela" class="block px-9 mx-auto max-w-sm" />
+  <div class="lg:col-span-2">
+    <img src={padres} alt="abuela" class="block px-9 max-w-sm mx-auto" />
+  </div>
 </Layout>
