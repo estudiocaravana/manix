@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply scroll-smooth text-indigo-900 text-lg;
+    @apply text-indigo-900 text-lg;
     font-family: "Poppins", sans-serif;
   }
 }
 @layer components {
   .seccion {
-    @apply my-12 mx-auto px-9 md:w-full max-w-lg;
+    @apply py-9 mx-auto px-9 md:w-full max-w-lg;
+  }
+  .anclas {
+    @apply inline-block px-2;
   }
 }
